@@ -171,7 +171,7 @@ O endereço do proprietário não pode ser vazio (altere no construtor para rece
 
 ##### APIs
 
-14. Criar as seguintes APIs, utilizando como base de dados HashMap:
+14. Criar as seguintes APIs, utilizando como base de dados HashMap: 
 Dica: https://start.spring.io/
 - Cadastrar veiculo (POST).
 - Listar veiculos (GET).
