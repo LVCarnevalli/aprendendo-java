@@ -5,7 +5,7 @@
 - Os exercícios devem ser resolvidos na IDE IntelliJ, realizando um commit quando o projeto for configurado.
 - O projeto criado deve utilizar o padrão de projeto Maven.
 - Os exercícios devem ser resolvidados através de funções main.
-- Para cada exercício será necessário um commit seguindo o padrão "[Número do exercício] Descrição".
+- Para cada exercício será necessário um commit seguindo o padrão "[login][número do exercício] Descrição".
 
 ### Exercícios 
 ##### Variáveis primitivas e Controle de fluxo
@@ -107,9 +107,76 @@ Digite: + + 1
 Resposta: Ocorreu um erro!
 
 ##### Modificadores de acesso e atributos de classe
-##### Herança, reescrita e polimorfismo
-##### Interfaces
+12. Crie uma classe denominada Elevador para armazenar as informações de um elevador dentro de um prédio.
+A classe deve armazenar o andar atual (térreo = 0), total de andares no prédio (desconsiderando o térreo), capacidade do elevador e quantas pessoas estão presentes nele.
+A classe deve também disponibilizar os seguintes métodos:
 
+- Construtor: Deve receber como parâmetros a capacidade do elevador e o total de andares no prédio (os elevadores sempre começam no térreo e vazio);
+- Entra: para acrescentar uma pessoa no elevador (só deve acrescentar se ainda houver espaço);
+- Sai: para remover uma pessoa do elevador (só deve remover se houver alguém
+dentro dele);
+- Sobe: para subir um andar (não deve subir se já estiver no último andar);
+- Desce : para descer um andar (não deve descer se já estiver no térreo);
+Encapsular todos os atributos da classe (criar os métodos set e get).
 
+##### Interfaces, Herança, reescrita e polimorfismo
+13. Crie um sistema que controle os tipos de veiculos. O sistema vai abranger diversos tipos de carros, caminhões, motos ambos com suas funções.
+   
 
-##### Micro serviços
+1. Implemente uma classe Proprietário 
+Declare os seguintes atributos na classe: 
+- Nome
+- CPF
+- RG
+- Data de Nascimento
+- Rua
+- Bairro
+- Cidade
+- Estado 
+- Cep
+- Complemento
+2. Faça o encapsulamento dos atributos da classe Proprietário
+Os atributos nome, cpf e rg são obrigatórios (crie um construtor com esses parâmetros)
+3. Implemente uma classe Carro
+Declare os seguintes atributos na classe:
+- Modelo
+- Cor
+- Ano
+- Marca
+- Chassi
+- Proprietário
+- Velocidade máxima
+- Velocidade atual
+- Nr de portas
+- tem teto solar?
+- Nr Marchas
+- tem cambio automatico?
+- Volume de combustível
+4. Faça o encapsulamento da classe Carro e seus atributos
+5. Implemente o método acelera que aumenta a velocidade de 1 em 1 km/h
+6. Implemente o método freia que para o carro – Velocidade = 0 km/h
+7. Implemete o método troca marcha
+8. Implemente o método reduz a marcha;
+9. Altere a classe Proprietário para que o atributo Endereço vire uma classe;
+10. Encapsule os atributos da classe Endereço;
+O endereço do proprietário não pode ser vazio (altere no construtor para receber o endereço);
+Todo veículo tem um proprietário obrigatoriamente (implemente um construtor de veículo passando o proprietário como parâmetro);
+11. A marcha ré nao pode ser engatada se o a velocidade for superior a 0 KM/h;
+12. Implemente um método que calcule a autonomia de viagem do veículo com base no consumo médio passado como parâmetro;
+13. Implemente um método para exibir o volume de combustível 
+14. Transforme o atributo Marca de um carro em uma classe Marca com nome, nrDeModelos, ano de lançamento e código identificador
+15. Crie a classe abstrata Veiculo que a classe Carro pode extender, extraindo os atributos que são comuns a todos os tipo de veiculos, podendo ter Caminhao, Moto e entre outros.
+16. Instancie um objeto de cada classe Veiculo criada e relacione todas as outras.
+17. Exiba todos os atributos do Veiculo instanciado.
+
+##### APIs
+
+Criar as seguintes APIs, utilizando como base de dados HashMap:
+- Cadastrar veiculo (POST).
+- Listar veiculos (GET).
+- Executar ações dos veiculos (POST), acelerar, freiar, troca marcha, reduz marcha.
+
+##### Micro serviço
+
+Criar um serviço que lista as informações da seguinte API: http://www.mocky.io/v2/5c583ae02f0000070f856d91
+Considerar somente animais que nasceram depois de 2010.
