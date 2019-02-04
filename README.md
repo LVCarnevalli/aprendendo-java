@@ -123,60 +123,60 @@ Encapsular todos os atributos da classe (criar os métodos set e get).
 13. Crie um sistema que controle os tipos de veiculos. O sistema vai abranger diversos tipos de carros, caminhões, motos ambos com suas funções.
    
 
-1. Implemente uma classe Proprietário 
+- Implemente uma classe Proprietário 
 Declare os seguintes atributos na classe: 
-- Nome
-- CPF
-- RG
-- Data de Nascimento
-- Rua
-- Bairro
-- Cidade
-- Estado 
-- Cep
-- Complemento
-2. Faça o encapsulamento dos atributos da classe Proprietário
+   - Nome
+   - CPF
+   - RG
+   - Data de Nascimento
+   - Rua
+   - Bairro
+   - Cidade
+   - Estado 
+   - Cep
+   - Complemento
+- Faça o encapsulamento dos atributos da classe Proprietário
 Os atributos nome, cpf e rg são obrigatórios (crie um construtor com esses parâmetros)
-3. Implemente uma classe Carro
+- Implemente uma classe Carro
 Declare os seguintes atributos na classe:
-- Modelo
-- Cor
-- Ano
-- Marca
-- Chassi
-- Proprietário
-- Velocidade máxima
-- Velocidade atual
-- Nr de portas
-- tem teto solar?
-- Nr Marchas
-- tem cambio automatico?
-- Volume de combustível
-4. Faça o encapsulamento da classe Carro e seus atributos
-5. Implemente o método acelera que aumenta a velocidade de 1 em 1 km/h
-6. Implemente o método freia que para o carro – Velocidade = 0 km/h
-7. Implemete o método troca marcha
-8. Implemente o método reduz a marcha;
-9. Altere a classe Proprietário para que o atributo Endereço vire uma classe;
-10. Encapsule os atributos da classe Endereço;
+   - Modelo
+   - Cor
+   - Ano
+   - Marca
+   - Chassi
+   - Proprietário
+   - Velocidade máxima
+   - Velocidade atual
+   - Nr de portas
+   - tem teto solar?
+   - Nr Marchas
+   - tem cambio automatico?
+   - Volume de combustível
+- Faça o encapsulamento da classe Carro e seus atributos
+- Implemente o método acelera que aumenta a velocidade de 1 em 1 km/h
+- Implemente o método freia que para o carro – Velocidade = 0 km/h
+- Implemete o método troca marcha
+- Implemente o método reduz a marcha;
+- Altere a classe Proprietário para que o atributo Endereço vire uma classe;
+- Encapsule os atributos da classe Endereço;
 O endereço do proprietário não pode ser vazio (altere no construtor para receber o endereço);
-Todo veículo tem um proprietário obrigatoriamente (implemente um construtor de veículo passando o proprietário como parâmetro);
-11. A marcha ré nao pode ser engatada se o a velocidade for superior a 0 KM/h;
-12. Implemente um método que calcule a autonomia de viagem do veículo com base no consumo médio passado como parâmetro;
-13. Implemente um método para exibir o volume de combustível 
-14. Transforme o atributo Marca de um carro em uma classe Marca com nome, nrDeModelos, ano de lançamento e código identificador
-15. Crie a classe abstrata Veiculo que a classe Carro pode extender, extraindo os atributos que são comuns a todos os tipo de veiculos, podendo ter Caminhao, Moto e entre outros.
-16. Instancie um objeto de cada classe Veiculo criada e relacione todas as outras.
-17. Exiba todos os atributos do Veiculo instanciado.
+- Todo veículo tem um proprietário obrigatoriamente (implemente um construtor de veículo passando o proprietário como parâmetro);
+- A marcha ré nao pode ser engatada se o a velocidade for superior a 0 KM/h;
+- Implemente um método que calcule a autonomia de viagem do veículo com base no consumo médio passado como parâmetro;
+- Implemente um método para exibir o volume de combustível 
+- Transforme o atributo Marca de um carro em uma classe Marca com nome, nrDeModelos, ano de lançamento e código identificador
+- Crie a classe abstrata Veiculo que a classe Carro pode extender, extraindo os atributos que são comuns a todos os tipo de veiculos, podendo ter Caminhao, Moto e entre outros.
+- Instancie um objeto de cada classe Veiculo criada e relacione todas as outras.
+- Exiba todos os atributos do Veiculo instanciado.
 
 ##### APIs
 
-Criar as seguintes APIs, utilizando como base de dados HashMap:
+14. Criar as seguintes APIs, utilizando como base de dados HashMap:
 - Cadastrar veiculo (POST).
 - Listar veiculos (GET).
 - Executar ações dos veiculos (POST), acelerar, freiar, troca marcha, reduz marcha.
 
 ##### Micro serviço
 
-Criar um serviço que lista as informações da seguinte API: http://www.mocky.io/v2/5c583ae02f0000070f856d91
+15. Criar um serviço que lista as informações da seguinte API: http://www.mocky.io/v2/5c583ae02f0000070f856d91
 Considerar somente animais que nasceram depois de 2010.
