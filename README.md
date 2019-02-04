@@ -24,7 +24,7 @@ Desejo que quando executar o programa ele me exiba apenas os funcionários maior
 09 09 09 09 09 09 09 09 09  
 10 10 10 10 10 10 10 10 10 10  
 ... 
-4. Desejo que quando executar o programa ele me exiba taboada do 1 ao 10.
+4. Desejo que quando executar o programa ele me exiba taboada do 1 ao 10.  
 1x1=1  
 1x2=2  
 1x3=3  
